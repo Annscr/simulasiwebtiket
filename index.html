@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UNPAMFEST</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  <div class="logo">
+    <img src="assets/logo.png" alt="Logo" />
+  </div>
+  <nav class="header-buttons">
+    <a href="#venue-guest-container" class="btn">Venue</a>
+    <a href="#tickets" class="btn">Daftar Tiket</a>
+  </nav>
+</header>
+
+<section class="banner">
+  <img src="assets/banner.jpg" alt="Banner Acara" class="banner-image" />
+</section>
+
+<section id="venue-guest-container" class="venue-guest-container">
+  <div class="venue">
+    <img src="assets/venue_map.jpg" alt="Denah Lokasi Acara" class="venue-map" />
+  </div>
+  <div class="guest-star">
+    <img src="assets/guest_star.jpg" alt="Guest Star" class="guest-star-image" />
+  </div>
+</section>
+
+<main>
+  <section id="tickets">
+    <h2>Daftar Tiket</h2>
+    <div class="ticket-list">
+
+      <!-- Tiket 1 -->
+      <div class="ticket">
+        <h3>Tiket Reguler</h3>
+        <p>Tiket masuk untuk acara UNPAMFEST, tanpa bonus.</p>
+        <p>Harga: Rp50.000,00</p>
+        <form action="process_ticket.html" method="POST">
+          <input type="hidden" name="ticket_id" value="1" />
+          <input type="text" name="buyer_name" placeholder="Nama Anda" required />
+          <input type="email" name="buyer_email" placeholder="Email Anda" required />
+          <input type="number" name="quantity" placeholder="Jumlah" min="1" max="100" required />
+          <button type="submit">Beli Tiket</button>
+        </form>
+      </div>
+
+      <!-- Tiket 2 -->
+      <div class="ticket">
+        <h3>Tiket VIP</h3>
+        <p>Akses VIP dengan tempat duduk eksklusif dan merchandise.</p>
+        <p>Harga: Rp150.000,00</p>
+        <form action="process_ticket.html" method="POST">
+          <input type="hidden" name="ticket_id" value="2" />
+          <input type="text" name="buyer_name" placeholder="Nama Anda" required />
+          <input type="email" name="buyer_email" placeholder="Email Anda" required />
+          <input type="number" name="quantity" placeholder="Jumlah" min="1" max="50" required />
+          <button type="submit">Beli Tiket</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+</main>
+</body>
+</html>

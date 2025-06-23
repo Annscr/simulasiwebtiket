@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('assets/banner2.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #FDCC07;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 70px;
+}
+
+.logo img {
+  height: 130px;
+  margin-top: 50px;
+}
+
+.header-buttons {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 5px;
+}
+
+.header-buttons .btn {
+  font-family: 'Bebas Neue', sans-serif;
+  text-decoration: none;
+  padding: 5px 10px;
+  color: #FF5EB0;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  font-size: 30px;
+  transition: color 0.3s ease;
+}
+
+.header-buttons .btn:hover {
+  color: #d44f88;
+  cursor: pointer;
+}
+
+.banner {
+  margin-top: 70px;
+}
+
+.banner img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+main {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  margin: 20px auto;
+  border-radius: 8px;
+  max-width: 800px;
+}
+
+.ticket-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.ticket {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  width: 300px;
+  background: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(36, 16, 255, 0.1);
+}
+
+form input, form button {
+  display: block;
+  margin: 10px 0;
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #555;
+}
+
+.venue-guest-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+.venue, .guest-star {
+  flex: 1;
+  text-align: center;
+}
+
+.venue img, .guest-star img {
+  max-width: 90%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+html {
+  scroll-behavior: smooth;
+}
